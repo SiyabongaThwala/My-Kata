@@ -16,6 +16,7 @@ def duplicate_count(text):
         if count[key] > 1:
             print(key,count[key])
 
+
+
         
 
-duplicate_count('are')
