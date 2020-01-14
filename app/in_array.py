@@ -11,3 +11,27 @@ def in_array(a1,a2):
         print((list(set(l))))
     else:
         print("")    
+
+'''
+def spin_words(sentence:str):
+    splittedString = list(sentence)
+    splittedString.reverse()
+    reversedString = ''.join(splittedString)
+    
+    return reversedString
+
+    reversedString= ""
+    for item in sentence.split():
+        if len(item) >= 5:
+            reversedWord = ''.join(reversed(item))
+            reversedString =reversedString +' '+ reversedWord           
+        else:
+            reversedString =item +' '+ reversedString
+    if len(sentence.split()) == 1:
+        finalString=reversedString.strip()
+        print(finalString) 
+    else:
+        reversedString
+        print(reversedString)
+
+'''    
