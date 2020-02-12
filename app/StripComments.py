@@ -13,11 +13,9 @@ def solution(string,markers):
                 BeforeMarkerString = item[:position].strip()
                 #markerIndex += 1
                 print(BeforeMarkerString)
-            else:
-                BeforeMarkerString = item
-                print(BeforeMarkerString)    
+              
 
-            array.remove(item)
+            
 
             
 solution("apples, pears # and bananas\ngrapes\nbananas !apples",["#","!"]) 
