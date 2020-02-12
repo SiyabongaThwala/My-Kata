@@ -1,22 +1,15 @@
 
 def increment_string(strng):
-    if strng[len(strng)-1].isdigit():
-        NumbersFromString=([int(item) for item in strng if item.isdigit()])
-        numbertoincrease= (''.join(map(str,NumbersFromString))) #joining the numbers from the string
+    head = strng.rstrip('0123456789')
+    tail = strng[len(head):]
 
-        IncreasedlastValue =str(int((''.join(map(str,NumbersFromString)))) + 1)
-        
-        IncrementedString = strng[:-1] + IncreasedlastValue
+    if head == "":
+        print(strng + "1")
     else:
-         IncrementedString = strng + str(1)   
-        
-    print(IncrementedString) 
+        print(head + str(int(tail)+1).zfill(len(tail)))   
 
-    # NumbersFromString=([int(item) for item in strng if item.isdigit()])
-    # print(NumbersFromString)
-    # print(''.join(map(str,NumbersFromString)))
+
+increment_string('foobar0099')    
     
 
 
-increment_string('foobar99')    
-    
